@@ -1,0 +1,26 @@
+<div style="text-align:center">
+  <h1 [title]="title"> Welcome to {{ title | uppercase }}!  </h1>  
+
+  <h1>To Do List</h1>
+  <ul>
+    <li *ngFor="let i of itemlist">{{i.item}}</li>
+  </ul>
+<!-- 
+  <div>
+      <label>name:
+        <input [(ngModel)]="name" placeholder="Your name">
+      </label><br/>
+  </div>
+
+
+  <app-todo [name]="name" (additem)='displaynewItem($event)'></app-todo>
+  <app-courses [count]="3" (reset)='displayCount($event)'></app-courses> -->
+
+  <!-- <a routerLink = "todo">To Do</a> &nbsp; | &nbsp; <a routerLink = "courses">Courses</a>
+
+  <router-outlet></router-outlet>  -->
+
+
+</div>
+
+

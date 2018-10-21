@@ -1,0 +1,16 @@
+<div>
+
+    <h2>There are  {{ count }} courses</h2>
+    <button (click)="increment()">Increment</button>
+    <button (click)="reset()">Reset</button>
+    <h2>List of courses:</h2>
+    </div>
+    <div>
+        <label>New Course:
+          <input [(ngModel)]="newcourse" placeholder="Enter Course" (change) = "addcourse(newcourse)">
+        </label>
+    </div>
+      
+    <ul *ngIf="courses.length>0">
+     <li *ngFor="let i of courses">{{i | uppercase }}</li>
+    </ul>

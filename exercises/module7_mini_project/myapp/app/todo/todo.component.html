@@ -1,0 +1,16 @@
+<div>
+<h1>Hi {{name}}, How are you</h1>
+<h2>To Do List:</h2>
+</div>
+<div>
+    <label>New Item:
+      <input [(ngModel)]="newitem" placeholder="Enter items" (change) = "additem(newitem)">
+    </label>
+</div>
+  
+<ul *ngIf="items.length>0">
+ <li *ngFor="let i of items">{{i | uppercase }}</li>
+</ul>
+
+
+
